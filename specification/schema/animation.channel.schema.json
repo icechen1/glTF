@@ -12,7 +12,7 @@
             "gltf_detailedDescription" : "The ID of a sampler in this animation used to compute the value for the target, e.g., a node's translation, rotation, or scale (TRS)."
         },
         "target" : {
-            "extends" : { "$ref" : "animation.channel.target.schema.json" },
+            "allOf" : [ { "$ref" : "animation.channel.target.schema.json" } ],
             "description" : "The ID of the node and TRS property to target.",
             "required" : true
         }

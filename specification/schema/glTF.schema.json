@@ -38,7 +38,7 @@
             "gltf_detailedDescription" : "A dictionary object of keyframe animations.  The name of each animation is an ID in the global glTF namespace that is used to reference the animation."
         },
         "asset" : {
-            "extends" : { "$ref" : "asset.schema.json" },
+            "allOf" : [ { "$ref" : "asset.schema.json" } ],
             "description" : "Metadata about the glTF asset.",
             "default" : {}
         },
